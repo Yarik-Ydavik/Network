@@ -34,12 +34,20 @@ namespace Network
             timer.Start();
         }
 
+        public NetworkInterface[] nicArr;
+
+        
         private void Timer_Tick(object sender, EventArgs e)
         {
-            UpdateNetworkInterface();
+            nicArr = NetworkInterface.GetAllNetworkInterfaces();
+            for (int i = 0; i < nicArr.Length; i++)
+                selectedInterfaceComboBox.Items.Add(nicArr[i].Name);
+
+            /*            UpdateNetworkInterface();
+            */
         }
 
-        private void UpdateNetworkInterface()
+        /*private void UpdateNetworkInterface()
         {
             if (selectedInterfaceComboBox.SelectedItem != null)
             {
@@ -59,6 +67,6 @@ namespace Network
                 interfaceInfoTextBlock.Text = selectedInterfaceInfo.ToString();
             }
         }
-
+*/
     }
 }

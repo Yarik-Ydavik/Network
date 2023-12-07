@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox x:Name="selectedInterfaceComboBox" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" SelectionChanged="selectedInterfaceComboBox_SelectionChanged"/>
+        <ComboBox x:Name="selectedInterfaceComboBox" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="200"/>
         <TextBlock x:Name="interfaceInfoTextBlock" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" TextWrapping="Wrap" Width="500"/>
     </Grid>
 </Window>
